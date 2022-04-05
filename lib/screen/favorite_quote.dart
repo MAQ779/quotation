@@ -3,13 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:path/path.dart';
 import 'package:qutation/SavingQuotes/quoteDB.dart';
 import 'package:qutation/classes/quote.dart';
-
 import 'package:getwidget/getwidget.dart';
-import 'package:qutation/classes/Provider_loaded.dart';
 import 'package:provider/provider.dart';
-
 //Hive
-
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../SavingQuotes/quoteDB.dart';
@@ -153,103 +149,3 @@ class _loadedBodyState extends State<loadedBody> {
     quoteFav.delete();
   }
 }
-
-// void initState() {
-//   super.initState();
-//   LoadedQuotes();
-// }
-
-// Future LoadedQuotes() async{
-//   setState(() {
-//     checkLoading = true;
-//   });
-//   this.favQ = await QuoteDB.instance.readLoaded();
-//   setState(() {
-//     checkLoading = false;
-//   });
-// }
-
-// Column(
-// children: [
-// Expanded(
-// child: GFButton(
-// color: Colors.deepPurple,
-// onPressed: () {
-// print(favQ.first);
-// //Navigator.pushNamed(context, '/loadedQ');
-// },
-// textStyle:
-// TextStyle(fontSize: 20, color: Colors.deepPurple),
-// text: 'loaded Quote',
-// shape: GFButtonShape.pills,
-// type: GFButtonType.outline2x,
-// size: GFSize.LARGE,
-// splashColor: Color(0xB7695390),
-// ),
-// ),
-// ListView.builder(
-// // Let the ListView know how many items it needs to build.
-// itemCount: favQ.length,
-// // Provide a builder function. This is where the magic happens.
-// // Convert each item into a widget based on the type of item it is.
-// itemBuilder: (context, index) {
-// final item = favQ[index];
-//
-// return ListTile(
-// //title: item.buildTitle(context),
-// //subtitle: item.buildSubtitle(context),
-// );
-// },
-// ),
-// ],
-// )
-
-//CustomScrollView(
-//       slivers: [
-//         // Add the app bar to the CustomScrollView.
-//         const SliverAppBar(
-//           // Provide a standard title.
-//           title: Text('Loaded Quotes', style: TextStyle(fontSize: 40, color: Colors.purple),),
-//           // Allows the user to reveal the app bar if they begin scrolling
-//           // back up the list of items.
-//           floating: true,
-//           // Display a placeholder widget to visualize the shrinking size.
-//           flexibleSpace: Placeholder(),
-//           // Make the initial height of the SliverAppBar larger than normal.
-//           expandedHeight: 100,
-//         ),
-//         // Next, create a SliverList
-//         SliverList(
-//           // Use a delegate to build items as they're scrolled on screen.
-//           delegate: SliverChildBuilderDelegate(
-//             // The builder function returns a ListTile with a title that
-//             // displays the index of the current item.
-//                 (context, index) => ListTile(title: Text('ID:'+favQ[index].id.toString()),
-//                   leading: Padding(
-//                   padding: const EdgeInsets.all(3.0),
-//                   child: Container(
-//                     margin:
-//                     EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-//                     child: GFBorder(
-//                       dashedLine: [4, 6],
-//                       strokeWidth: 4,
-//                       type: GFBorderType.rRect,
-//                       color: Color(0xFF8615CD),
-//                       child: Text(
-//                             '\n\n"' +
-//                             favQ[index].getContent() +
-//                             '" By ' +
-//                             favQ[index].getAuthor(),
-//                         style: TextStyle(
-//                           fontSize: 15,
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                 ),),
-//             // Builds 1000 ListTiles
-//             childCount:favQ.length,
-//           ),
-//         ),
-//       ],
-//     )

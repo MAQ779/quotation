@@ -3,16 +3,11 @@ import 'package:http/http.dart' as http;
 import 'package:getwidget/getwidget.dart';
 import 'dart:async';
 import 'dart:convert';
-import 'classes/constant.dart';
 import 'classes/quote.dart';
 import 'screen/new_quote_page.dart';
 import 'screen/loaded_quote.dart';
 import 'screen/favorite_quote.dart';
-
-
 import 'package:provider/provider.dart';
-import 'package:qutation/classes/Provider_loaded.dart';
-
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'SavingQuotes/quoteDB.dart';

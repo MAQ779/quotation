@@ -7,22 +7,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 //for provider
 import 'package:path_provider/path_provider.dart';
-
 //database
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
 import 'dart:convert';
 import '../SavingQuotes/quoteDB.dart';
 import '../classes/quote.dart';
-
 import 'package:provider/provider.dart';
-import 'package:qutation/classes/Provider_loaded.dart';
-
-
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import '../SavingQuotes/quoteDB.dart';
-//import '../classes/quoteFav.dart';
 import '../SavingQuotes/boxes.dart';
 
 

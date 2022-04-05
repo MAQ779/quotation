@@ -3,13 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:path/path.dart';
 import 'package:qutation/SavingQuotes/quoteDB.dart';
 import 'package:qutation/classes/quote.dart';
-
 import 'package:getwidget/getwidget.dart';
-import 'package:qutation/classes/Provider_loaded.dart';
 import 'package:provider/provider.dart';
-
 //Hive
-
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../SavingQuotes/quoteDB.dart';
