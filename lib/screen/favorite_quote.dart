@@ -96,9 +96,9 @@ class _loadedBodyState extends State<loadedBody> {
             collapsedTextColor: Colors.white ,
             backgroundColor: Colors.purple,
             tilePadding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-            title:  Text(
+            title: Text(
               quoteFav.quoteContent,
-              maxLines: 2,
+              maxLines: null,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
             subtitle: Text(

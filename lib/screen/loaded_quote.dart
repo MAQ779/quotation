@@ -98,7 +98,7 @@ class _loadedBodyState extends State<loadedBody> {
             tilePadding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             title: Text(
               quoteDB.quoteContent + '.',
-              maxLines: 2,
+              maxLines: null,
               style: TextStyle(fontSize: 18),
             ),
             subtitle: Text(

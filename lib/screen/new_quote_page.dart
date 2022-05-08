@@ -27,11 +27,6 @@ class NewQuotePage extends StatefulWidget {
 }
 
 class _NewQuotePageState extends State<NewQuotePage> {
-  //@override
-  // void dispose(){
-  //   Hive.close();
-  //   super.dispose();
-  // }
   final box = Boxes.getAllLoadedQuotes();
   final boxFav = Boxes.getAllFavoriteQuotes();
 
@@ -52,7 +47,7 @@ class _NewQuotePageState extends State<NewQuotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('QPM'),
+          title: const Text('MPQ'),
         ),
         body: ValueListenableBuilder<Box<QuoteDB>>(
           valueListenable: Boxes.getAllLoadedQuotes().listenable(),
